@@ -1,0 +1,138 @@
+echo 10 + 5 | bc
+15
+
+comm file1.txt file2.txt
+422111
+422112
+422113
+422114
+422115
+	viswa
+	eren
+	kai
+	chris
+	evans
+
+sudo chown student file1.txt
+
+sudo chgrp adm file1.txt
+
+dd if=file1.txt of=output_file.txt
+
+diff file1.txt file2.txt
+1,5c1,5
+< 422111
+< 422112
+< 422113
+< 422114
+< 422115
+---
+> viswa
+> eren
+> kai
+> chris
+> evans
+
+finger student
+Login: student        			Name: student
+Directory: /home/student            	Shell: /bin/bash
+On since Mon Apr  1 11:49 (IST) on :0 from :0 (messages off)
+No mail.
+No Plan.
+
+find output_file.txt
+output_file.txt
+
+=============FILE LOCKING==============
+Enter locking Mode (R/W): 
+W
+Enter file path: 
+/home/student/Desktop/422111-unix/file1.txt
+Command to execute after locking: 
+lslocks             
+COMMAND           PID  TYPE  SIZE MODE  M      START        END PATH
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/Extension State/LOCK
+chrome           3639 POSIX   16K READ  0 1073741826 1073742335 /home/student/.config/google-chrome/Default/heavy_ad_intervention_opt_out.db
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/GCM Store/Encryption/LOCK
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/Managed Extension Settings/ghbmnnjooekpmoe
+chrome           3639 POSIX   48K WRITE 0 1073741824 1073742335 /home/student/.config/google-chrome/Default/Login Data For Account
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/shared_proto_db/metadata/LOCK
+nautilus         4971 POSIX 22.8M READ  0 1073741826 1073742335 /home/student/.cache/tracker/meta.db
+nautilus         4971 POSIX   32K READ  0        128        128 /home/student/.cache/tracker/meta.db-shm
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+tracker-miner-f  1706 POSIX 22.8M READ  0 1073741826 1073742335 /home/student/.cache/tracker/meta.db
+tracker-miner-f  1706 POSIX   32K READ  0        128        128 /home/student/.cache/tracker/meta.db-shm
+update-notifier  3449 FLOCK       WRITE 0          0          0 /run/user/1001/update-notifier.pid
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/GCM Store/LOCK
+chrome           3639 POSIX  416K WRITE 0 1073741824 1073742335 /home/student/.config/google-chrome/Default/Network Action Predictor
+chrome           3639 POSIX  104K WRITE 0 1073741824 1073742335 /home/student/.config/google-chrome/Default/WebStorage/QuotaManager
+chrome           3639 POSIX   28K READ  0 1073741826 1073742335 /home/student/.config/google-chrome/Default/databases/Databases.db
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/shared_proto_db/LOCK
+chrome           3639 POSIX   20K WRITE 0 1073741824 1073742335 /home/student/.config/google-chrome/Default/DIPS
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/IndexedDB/https_mail.google.com_0.indexedd
+java             4174 POSIX       WRITE 0          0          0 /home/student/Downloads/422110/.metadata/.lock
+chrome           3639 POSIX   28K READ  0 1073741826 1073742335 /home/student/.config/google-chrome/Default/Top Sites
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/Service Worker/Database/LOCK
+chrome           3639 POSIX  1.3M WRITE 0 1073741824 1073742335 /home/student/.config/google-chrome/Default/History
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/Site Characteristics Database/LOCK
+chrome           3639 POSIX  640K WRITE 0 1073741824 1073742335 /home/student/.config/google-chrome/Default/Favicons
+flock            5320 FLOCK   35B WRITE 0          0          0 /home/student/Desktop/422111-unix/file1.txt
+thermald          856 POSIX       WRITE 0          0          0 /run/snapd/ns...
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/Sync Data/LevelDB/LOCK
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+chrome           3639 POSIX   40K WRITE 0 1073741824 1073742335 /home/student/.config/google-chrome/Default/Shortcuts
+atd               859 POSIX       WRITE 0          0          0 /run/snapd/ns...
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/Local Storage/leveldb/LOCK
+chrome           3639 POSIX  108K WRITE 0 1073741824 1073742335 /home/student/.config/google-chrome/Default/Web Data
+whoopsie         1195 FLOCK       WRITE 0          0          0 /run/lock...
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/Platform Notifications/LOCK
+chrome           3639 POSIX   48K WRITE 0 1073741824 1073742335 /home/student/.config/google-chrome/Default/Login Data
+cron              832 FLOCK       WRITE 0          0          0 /run/snapd/ns...
+snapd             852 FLOCK       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+mysqld           1031 POSIX       WRITE 0          0          0 /...
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/Session Storage/LOCK
+chrome           3639 POSIX       WRITE 0          0          0 /home/student/.config/google-chrome/Default/File System/Origins/LOCK
+java             4174 POSIX       WRITE 0          0          0 /home/student/eclipse/java-2021-09/eclipse/configuration/org.eclipse.core.runtime/.man
+java             4174 POSIX       WRITE 0          0          0 /home/student/eclipse/java-2021-09/eclipse/configuration/org.eclipse.equinox.app/.mana
+ln -s file1.txt symbolic_link.txt
+ln file2.txt hard_link.txt
+
+lp file2.txt
+lp: Error - No default destination.
+
+lpstat -p
+printer Brother_DCP_B7535DW_series is idle.  enabled since Monday 01 April 2024 10:35:49 AM
+printer Canon_iR2006_2206 is idle.  enabled since Tuesday 29 August 2023 02:19:47 PM
+printer Canon_iR2006_2206@Canon740b8d.local is idle.  enabled since Monday 01 April 2024 10:35:24 AM
+printer Canon_iR2006_2206_1_ is idle.  enabled since Tuesday 29 August 2023 02:18:50 PM
+printer Canon_iR2006_2206_3_ is idle.  enabled since Wednesday 27 September 2023 03:42:22 PM
+printer Canon_MF260 is idle.  enabled since Friday 24 June 2022 03:12:09 PM
+printer HP_LaserJet_Pro_M329_8E804C_ is idle.  enabled since Wednesday 06 April 2022 02:09:10 PM
+printer HP_LaserJet_Pro_M329_DF1BC5_ is idle.  enabled since Thursday 15 September 2022 03:48:00 PM
+printer HP_LaserJet_Pro_M329_DF1BC5_@HPE8D8D1DF1BC5.local is idle.  enabled since Tuesday 27 September 2022 12:00:31 AM
+printer HP_LaserJet_Pro_M329_DF8BEF_ is idle.  enabled since Wednesday 25 May 2022 12:01:56 AM
+printer HP_LaserJet_Pro_M329_DF8BEF_@HPE8D8D1DF8BEF.local is idle.  enabled since Tuesday 07 June 2022 02:13:38 PM
+printer jkmurthy_sos is idle.  enabled since Monday 01 April 2024 10:35:26 AM
+
+mesg y
+
+ftp vsftpd.com 
+ftp: connect to address 13.248.169.48: Connection timed out
+Trying 76.223.54.146...
+
